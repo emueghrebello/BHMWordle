@@ -12,7 +12,7 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('headless')
 chrome_options.add_argument('window-size=1920x1080')
 chrome_options.add_argument("disable-gpu")
-driver = webdriver.Chrome('/Users/aditi/Downloads/chromedriver', chrome_options=chrome_options)
+driver = webdriver.Chrome(chrome_options=chrome_options)
 driver.get(url)
 html = driver.page_source
 soup = bs(html, "html.parser")
